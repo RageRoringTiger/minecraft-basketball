@@ -9,18 +9,25 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.Plugin;
 
 public class UseBasketBallEvent implements Listener {
+    private Plugin plugin = Basketball.getPlugin(Basketball.class);
     @EventHandler
     public void onPlayerRightClick(PlayerInteractEvent event) {
+        String valueStr = plugin.getConfig().getString("UseBasketBallEvent.BallPowerValue");
+        int valueInt = Integer.parseInt(valueStr);
         Player p = event.getPlayer();
         Action a = event.getAction();
         ArmorStand armorstand = (ArmorStand) p.getWorld().spawnEntity(p.getLocation(), EntityType.ARMOR_STAND);
         if (a == Action.RIGHT_CLICK_AIR) {
-            armorstand.setVisible(false);
-            armorstand.setInvulnerable(true);
-            armorstand.getEquipment().setHelmet(new ItemStack(Material.PLAYER_HEAD));
-        }
+            if (p.getInventory().getItemInMainHand().equals(Material.ORANGE_CONCRETE)){
+                armorstand.setVisible(false);
+                armorstand.setInvulnerable(true);
+                armorstand.getEquipment().setHelmet(new ItemStack(Material.ORANGE_CONCRETE));
+                armorstand.setVelocity(p.getLocation().getDirection().multiply(valueInt));
+            } else {}
+        } else {}
 
     }
 }
