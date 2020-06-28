@@ -19,9 +19,10 @@ public class UseBasketBallEvent implements Listener {
         int valueInt = Integer.parseInt(valueStr);
         Player p = event.getPlayer();
         Action a = event.getAction();
-        ArmorStand armorstand = (ArmorStand) p.getWorld().spawnEntity(p.getLocation(), EntityType.ARMOR_STAND);
+        ItemStack inHand = p.getInventory().getItemInMainHand();
         if (a == Action.RIGHT_CLICK_AIR) {
-            if (p.getInventory().getItemInMainHand().equals(Material.ORANGE_CONCRETE)){
+            if (inHand.getType() == Material.ORANGE_CONCRETE){
+                ArmorStand armorstand = (ArmorStand) p.getWorld().spawnEntity(p.getLocation(), EntityType.ARMOR_STAND);
                 armorstand.setVisible(false);
                 armorstand.setInvulnerable(true);
                 armorstand.getEquipment().setHelmet(new ItemStack(Material.ORANGE_CONCRETE));
