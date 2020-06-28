@@ -1,5 +1,6 @@
 package me.rageroringtiger.basketball;
 
+import org.bukkit.Material;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -11,13 +12,15 @@ import org.bukkit.inventory.ItemStack;
 
 public class UseBasketBallEvent implements Listener {
     @EventHandler
-    public void onPlayerRightClick(PlayerInteractEvent event){
+    public void onPlayerRightClick(PlayerInteractEvent event) {
         Player p = event.getPlayer();
         Action a = event.getAction();
         ArmorStand armorstand = (ArmorStand) p.getWorld().spawnEntity(p.getLocation(), EntityType.ARMOR_STAND);
-        ItemStack 
-        if (a == Action.RIGHT_CLICK_AIR){
-            armorstand.getEquipment().setHelmet();
+        if (a == Action.RIGHT_CLICK_AIR) {
+            armorstand.setVisible(false);
+            armorstand.setInvulnerable(true);
+            armorstand.getEquipment().setHelmet(new ItemStack(Material.PLAYER_HEAD));
         }
+
     }
 }
