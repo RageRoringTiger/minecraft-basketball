@@ -8,6 +8,7 @@ public final class Basketball extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         System.out.println("Minecraft-Basketball has loaded.");
+        getServer().getPluginManager().registerEvents(new UseBasketBallEvent(), this);
     }
 
 }

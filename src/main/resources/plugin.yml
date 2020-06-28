@@ -1,6 +1,6 @@
 name: BasketBall
 version: ${project.version}
-main: me.rageroringtiger.basketball.BasketBall
-api-version: 1.15.2
+main: me.rageroringtiger.basketball.Basketball
+api-version: 1.13
 authors: [RageRoringTiger, Jguyjoggy]
 description: Recreates basketball in minecraft.
