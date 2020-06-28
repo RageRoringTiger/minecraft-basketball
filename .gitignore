@@ -111,3 +111,47 @@ buildNumber.properties
 
 # Common working directory
 run/
+Plugin Testing Server/logs/2020-06-28-1.log.gz
+Plugin Testing Server/commands.yml
+Plugin Testing Server/banned-ips.json
+Plugin Testing Server/banned-players.json
+Plugin Testing Server/bukkit.yml
+Plugin Testing Server/eula.txt
+Plugin Testing Server/help.yml
+Plugin Testing Server/logs/2020-06-28-2.log.gz
+Plugin Testing Server/logs/2020-06-28-3.log.gz
+Plugin Testing Server/ops.json
+Plugin Testing Server/permissions.yml
+Plugin Testing Server/plugins/PluginMetrics/config.yml
+Plugin Testing Server/server.properties
+Plugin Testing Server/spigot.yml
+Plugin Testing Server/start.bat
+Plugin Testing Server/usercache.json
+Plugin Testing Server/whitelist.json
+Plugin Testing Server/world/data/raids.dat
+Plugin Testing Server/world/level.dat
+Plugin Testing Server/world/level.dat_old
+Plugin Testing Server/world/poi/r.-1.0.mca
+Plugin Testing Server/world/poi/r.0.0.mca
+Plugin Testing Server/world/region/r.-1.0.mca
+Plugin Testing Server/world/region/r.0.0.mca
+Plugin Testing Server/world/session.lock
+Plugin Testing Server/world/uid.dat
+Plugin Testing Server/world_nether/DIM-1/data/raids.dat
+Plugin Testing Server/world_nether/DIM-1/region/r.-1.-1.mca
+Plugin Testing Server/world_nether/DIM-1/region/r.-1.0.mca
+Plugin Testing Server/world_nether/DIM-1/region/r.0.-1.mca
+Plugin Testing Server/world_nether/DIM-1/region/r.0.0.mca
+Plugin Testing Server/world_nether/level.dat
+Plugin Testing Server/world_nether/level.dat_old
+Plugin Testing Server/world_nether/session.lock
+Plugin Testing Server/world_nether/uid.dat
+Plugin Testing Server/world_the_end/DIM1/data/raids_end.dat
+Plugin Testing Server/world_the_end/DIM1/region/r.-1.-1.mca
+Plugin Testing Server/world_the_end/DIM1/region/r.-1.0.mca
+Plugin Testing Server/world_the_end/DIM1/region/r.0.-1.mca
+Plugin Testing Server/world_the_end/DIM1/region/r.0.0.mca
+Plugin Testing Server/world_the_end/level.dat
+Plugin Testing Server/world_the_end/level.dat_old
+Plugin Testing Server/world_the_end/session.lock
+Plugin Testing Server/world_the_end/uid.dat
