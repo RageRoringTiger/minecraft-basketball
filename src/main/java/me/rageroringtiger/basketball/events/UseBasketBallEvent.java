@@ -1,9 +1,7 @@
 package me.rageroringtiger.basketball.events;
 
 import me.rageroringtiger.basketball.Basketball;
-import org.bukkit.Bukkit;
 import org.bukkit.Material;
-import org.bukkit.World;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
@@ -13,6 +11,9 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.Plugin;
+import org.bukkit.util.EulerAngle;
+
+import java.util.HashMap;
 
 public class UseBasketBallEvent implements Listener {
     private Plugin plugin = Basketball.getPlugin(Basketball.class);
@@ -29,12 +30,12 @@ public class UseBasketBallEvent implements Listener {
                 ArmorStand armorstand = (ArmorStand) p.getWorld().spawnEntity(p.getLocation(), EntityType.ARMOR_STAND);
                 armorstand.setVisible(false);
                 armorstand.setInvulnerable(true);
+                armorstand.setSmall(true);
                 armorstand.getEquipment().setHelmet(new ItemStack(Material.ORANGE_CONCRETE));
                 armorstand.setVelocity(p.getLocation().getDirection().multiply(valueInt));
-                //armorstand.getWorld().dropItemNaturally(armorstand.getLocation(), new ItemStack(Material.ORANGE_CONCRETE));
-                //armorstand.remove();
             } else {}
         } else {}
+
 
     }
 }
