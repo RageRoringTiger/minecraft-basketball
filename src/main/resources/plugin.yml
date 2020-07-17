@@ -1,6 +1,10 @@
-name: BasketBall
+name: Basketball
 version: ${project.version}
 main: me.rageroringtiger.basketball.Basketball
 api-version: 1.13
 authors: [RageRoringTiger, Jguyjoggy]
 description: Recreates basketball in minecraft.
+commands:
+  power:
+    useage: /<command> <integer>
+    description: Let's you change the power level of the basketball.

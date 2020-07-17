@@ -10,6 +10,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.util.EulerAngle;
 
@@ -32,6 +33,7 @@ public class UseBasketBallEvent implements Listener {
                 armorstand.setInvulnerable(true);
                 armorstand.setSmall(true);
                 armorstand.getEquipment().setHelmet(new ItemStack(Material.ORANGE_CONCRETE));
+                armorstand.setMetadata("basketball", new FixedMetadataValue(plugin, ""));
                 armorstand.setVelocity(p.getLocation().getDirection().multiply(valueInt));
             } else {}
         } else {}
